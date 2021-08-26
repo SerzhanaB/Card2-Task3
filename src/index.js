@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function Number(){
+  var m=0;
+  
+m=Math.floor(Math.random() * 10);
+return m
+}
+
+function CountSumm(n){
+ var m=0;
+m=(n*(n+1)/2);
+return m
+}
+var b=0;
+b=Number();
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>Исходное число выбранное в в диапазоне от 0 до 100: {b} . Сумма первых натуральных чисел равна {CountSumm(b)}</div>,
   document.getElementById('root')
 );
 
