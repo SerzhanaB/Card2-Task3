@@ -5,18 +5,18 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 function Number(){
-  var m=0;
+  let m=0;
   
 m=Math.floor(Math.random() * 10);
 return m
 }
 
 function CountSumm(n){
- var m=0;
+ let m=0;
 m=(n*(n+1)/2);
 return m
 }
-var b=0;
+let b=0;
 b=Number();
 ReactDOM.render(
   <div>Исходное число выбранное в в диапазоне от 0 до 100: {b} . Сумма первых натуральных чисел равна {CountSumm(b)}</div>,
